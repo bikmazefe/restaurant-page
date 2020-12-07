@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    min-height: 7vh;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 150px;
+}
+
+.logo h1{
+    font-weight: 300;
+}
+
+.logo span{
+    font-weight: 100;
+}
+
+.nav-links{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    font-weight: 300;
+}
+
+.nav-links > *:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.678);
+}
+
+header{
+    background-image: url('./cover.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+header h2{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+header a{
+    padding: 10px;
+    background-color: darkslateblue;
+    color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+#main{
+    padding: 20px;
+    text-align: center;
+
+}
+
+#main > * {
+    animation: loadPage 0.7s forwards;
+}
+
+#main h3{
+    font-size: 32px;
+    font-weight: 200;
+    margin: 20px 0;
+}
+
+#main p{
+    color: rgba(0, 0, 0, 0.562);
+    font-weight: 300;
+}
+
+.menu-cta{
+    width: 90%;
+    background-color: red;
+    height: 300px;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 10px;
+}
+
+.menu-cta .image{
+    flex: 1;
+    background: url('menu-cta.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+}
+
+.menu-cta .text{
+    flex: 2;
+}
+
+.menu-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: 30px auto;
+    width: 70%;
+}
+
+.menu-item{
+    width: 300px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.menu-item img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.menu-item p{
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+
+
+@keyframes loadPage {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
